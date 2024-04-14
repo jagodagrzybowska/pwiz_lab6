@@ -36,8 +36,10 @@
             label6 = new Label();
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            comboBox3 = new ComboBox();
+            comboBox4 = new ComboBox();
+            label7 = new Label();
+            comboBox5 = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -77,7 +79,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(348, 63);
+            label5.Location = new Point(327, 63);
             label5.Name = "label5";
             label5.Size = new Size(84, 25);
             label5.TabIndex = 3;
@@ -110,28 +112,56 @@
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(182, 33);
             comboBox2.TabIndex = 6;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
-            // textBox1
+            // comboBox3
             // 
-            textBox1.Location = new Point(309, 99);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 7;
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
+            comboBox3.Location = new Point(279, 99);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(182, 33);
+            comboBox3.TabIndex = 7;
+            comboBox3.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
             // 
-            // textBox2
+            // comboBox4
             // 
-            textBox2.Location = new Point(497, 99);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 31);
-            textBox2.TabIndex = 8;
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Items.AddRange(new object[] { "0", "1" });
+            comboBox4.Location = new Point(492, 102);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(182, 33);
+            comboBox4.TabIndex = 8;
+            comboBox4.SelectedIndexChanged += comboBox4_SelectedIndexChanged;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(58, 292);
+            label7.Name = "label7";
+            label7.Size = new Size(78, 25);
+            label7.TabIndex = 9;
+            label7.Text = "CZAS (s)";
+            // 
+            // comboBox5
+            // 
+            comboBox5.FormattingEnabled = true;
+            comboBox5.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60" });
+            comboBox5.Location = new Point(164, 284);
+            comboBox5.Name = "comboBox5";
+            comboBox5.Size = new Size(182, 33);
+            comboBox5.TabIndex = 10;
+            comboBox5.SelectedIndexChanged += comboBox5_SelectedIndexChanged;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(comboBox5);
+            Controls.Add(label7);
+            Controls.Add(comboBox4);
+            Controls.Add(comboBox3);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
             Controls.Add(label6);
@@ -156,7 +186,9 @@
         private Label label6;
         private ComboBox comboBox1;
         private ComboBox comboBox2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private ComboBox comboBox3;
+        private ComboBox comboBox4;
+        private Label label7;
+        private ComboBox comboBox5;
     }
 }

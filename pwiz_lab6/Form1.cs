@@ -2,6 +2,7 @@ namespace pwiz_lab6
 {
     public partial class Form1 : Form
     {
+        public int x, y, dydelf, krokodyl, czas;
         public Form1()
         {
             InitializeComponent();
